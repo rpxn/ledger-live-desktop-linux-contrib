@@ -2,6 +2,6 @@
 set -euo pipefail
 shopt -s nullglob
 mkdir -vp ~/var/log
-l=( ~/bin/ledger-live-desktop-*-linux-x86_64.AppImage )
+l=( ~/bin/ledger-live-desktop-*.AppImage )
 echo "${l[0]}" "$@" >~/var/log/ledger-live-desktop.log
 exec "${l[0]}" "$@"
