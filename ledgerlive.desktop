@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Ledger Live
-Exec=/home/user/bin/ledger-live-desktop %U
+Exec=/bin/sh -c "exec $HOME/bin/ledger-live-desktop %U"
 Type=Application
 Categories=Finance;
 Terminal=false
